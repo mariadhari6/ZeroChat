@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim');
+@import url('https://fonts.googleapis.com/css?family=Caveat Brush');
+@import url('https://fonts.googleapis.com/css?family=Charm');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+
+
+*{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	
+	background: url(../image/Background.jpg) fixed no-repeat;
+	height: 100vh;
+	user-select: none;
+	background-size: cover;
+
+}
+header{
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+}
+.wrapper{
+}
+.navbar{
+	height: 80px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	user-select: none;
+}
+.logo{
+	height: 70px;
+	width: auto;
+	padding: 10px 50px;
+}
+.navbar ul{
+	float: right;
+	padding-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	padding: 0 8px;
+	display: inline-block;
+	line-height: 60px;
+	user-select: none;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 6px 13px;
+	font-size: 25px;
+	font-family: 'Akronim';
+	transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);	
+	transition: 0.5s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	user-select: none;
+	/* transition: 0.5s; */
+}
+.center h1{
+	margin-top: 30%;
+	color: white;
+	font-family: 'Caveat Brush';
+	font-size: 70px;
+	font-weight: bold;
+	width: 900px;
+	height: 50px;
+	text-align: center;
+}
+.center h2{
+	color: white;
+	font-size: 50px;
+	font-family: 'Charm';
+	font-weight: bold;
+	width: 885px;
+	margin-top: 50px;
+	text-align: center;
+}
+.center .buttons{
+	margin:  35px 280px;
+	text-align: center;
+}
+.buttons .login{
+	height: 40px;
+	width: 100px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffb3b3;
+	background: rgb(0, 53, 138);
+	outline: none;
+	cursor: pointer;
+	border-radius: 25px;
+}
+.buttons .sign-in{
+	height: 40px;
+	width: 100px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffb3b3;
+	background: rgb(138, 0, 25);
+	outline: none;
+	cursor: pointer;
+	border-radius:  25px;
+	margin-left: 13px;
+}
+.buttons a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: 'Boogaloo';
+}
+.buttons .login:hover{
+	background: rgb(97, 156, 250);
+	box-shadow: 0 0 10px rgb(97, 156, 250), 0 0 20px rgb(97, 156, 250), 0 0 40px rgb(145, 188, 255);
+}
+.buttons .sign-in:hover{
+	background: rgb(250, 97, 97);
+	box-shadow: 0 0 10px rgb(250, 97, 97), 0 0 20px rgb(250, 97, 97), 0 0 40px rgb(255, 145, 145);
+}
+.box-login{
+	/* position: relative; */
+	/* margin-top: 100px; */
+	transform: translate(0%, +30%);
+	color: white;
+	width: 400px;
+	padding: 40px;
+	/* height: 300px; */
+	background: rgba(0, 0, 0, 0.7);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+	border-radius: 9%;
+}
+.box-login .input-login{
+	width: 100%;
+	font-size: 40px	;
+}
+.box-login .input-login input{
+	width: 100%;
+	color: white;
+	padding: 8px 0;
+	font-family: 'Amarante';
+	border-radius: 10px;
+	outline: none;
+	font-size: 19px;
+	background: transparent;
+	margin-bottom: 12px;
+	letter-spacing: 1px;
+}
+.box-login h2{
+	/* text-align: left; */
+	transform: translate(-30%, -50%);
+	font-family: 'Amarante';
+}
+.box-login .user-logo{
+	background: url(../image/Background.jpg) fixed no-repeat;
+}
+.box-login .input-login label{
+	font-size: 18px;
+	font-family: 'Amarante';
+	position: absolute;
+	transform: translate(+10%, -200%);
+	pointer-events: none;
+	transition: 0.5s;
+}
+.box-login .input-login input:focus ~ label,
+.box-login .input-login input:valid ~ label{
+	transform: translate(+10%, -410%);
+	color: aqua;
+	font-size: 14px;
+}
+.box-login input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	background: blue;
+	padding: 10px 20px;
+	border-radius: 9px;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: 'Amarante';
+}
+.box-login input[type="submit"]:hover{
+	background: aqua;
+	color: black;
+}
+
+.box-login .select-box {
+  display: flex;
+  /* width: 400px; */
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  padding: 8px 0;
+  font-family: 'Amarante';
+  border-radius: 10px;
+  outline: none;
+  font-size: 19px;
+  background: transparent;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.select-box .options-container {
+  background: transparent;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: transparent;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+  border: 5px;
+  border-color: white;
+  order: 0;
+}
+
+.selected::after {
+  content: "";
+  background: url("../image/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  padding: 12px 24px;
+  cursor: pointer;
+  /* border: 3px; */
+  width: 100%;
+  color: white;
+  padding: 8px 0;
+  font-family: 'Amarante';
+  border-radius: 10px;
+  font-size: 19px;
+  background: transparent;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.select-box .option:hover {
+  background: #414b57;
+}
+
+.select-box label {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Amarante';
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+

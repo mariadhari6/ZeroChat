@@ -1,0 +1,15 @@
+user{
+  id *, username(unique), password, full_name, email(unique), gender, country, status_login, status_online; 
+}
+country{
+  id *, country_name(unique);
+}
+user@friends{
+  id *, username **, profile; 
+}
+user@chatting_rooms {
+  id * name_room(unique), 
+}
+name_room@chatting{
+  id *, name_room **, text_chat, sender (username **), date, time;
+}

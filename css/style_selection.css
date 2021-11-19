@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim');
+@import url('https://fonts.googleapis.com/css?family=Caveat Brush');
+@import url('https://fonts.googleapis.com/css?family=Charm');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+.select-country{
+	/* width: 100%; */
+	font-size: 19px	;
+	margin-top: 10px;
+	font-family: 'Amarante';
+}
+.select-country select{
+	width: 100%;
+	background-color:black ;
+	color: white;
+	padding: 8px 0;
+	font-family: 'Amarante';
+	border-radius: 10px;
+	outline: none;
+	font-size: 19px;
+	cursor: pointer;
+	margin-bottom: 12px;
+}
